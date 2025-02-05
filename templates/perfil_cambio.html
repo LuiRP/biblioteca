@@ -2,28 +2,35 @@
 
 {% block head %}
 <title>Mi Perfil</title>
-<link rel="stylesheet" href="{{url_for('static', filename='/css/Perfil.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='/css/perfil_cambio.css')}}">
 {% endblock %}
     
 {% block body %}
     <section>
-        <div class="ficha-perfil">
-            <div class="pfp">
-                <img src="/static/icons/sidebar/id-card.png" alt="">
-            </div>
-            <div></div>
+        <div class="ficha">
+            <form class="ficha-perfil" action="{{ url_for('course_1') }}" method="POST">
+                <div class="pfp">
+                    <img src="/static/icons/sidebar/id-card.png" alt="">
+                </div>
+                <div></div>
+    
+                <input type="text" name="username" id="username" value="{{ current_user.username }}" required class="field">
 
-            <p>Nombre de Usuario: <br>
-                <b>{{ user.username }}</b></p>
-            <p>Correo: <br>
-                <b>{{ user.email }}</b></p>
-            <p>Contraseña: <br>
-                <b>********</b></p>
-
-            <form class="btn-perfil" action="{{url_for('perfil_cambio')}}">
-                <input type="submit" value="Editar" />
+                <input type="email" name="email" id="email" value="{{ current_user.email }}" required class="field">
+                <p>Contraseña: <br>
+                    <b>********</b></p>
+    
+                <form class="btn-perfil" action="{{url_for('perfil_cambio')}}">
+                    <input type="submit" value="Editar" />
+                </form>
             </form>
         </div>
+
+        <div class="logo-talking">
+            <img src="/static/icons/mascota-perfil.png" alt="">
+        </div>
+
+
     </section>
 
 {% endblock %}
