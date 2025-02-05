@@ -1,3 +1,7 @@
+main {
+    place-content: center;
+}
+
 .timeline-area {
     margin: 90px auto;
     width: 360px;
