@@ -1,0 +1,29 @@
+{% extends 'aside.html' %}
+
+{% block head %}
+<title>Mi Perfil</title>
+<link rel="stylesheet" href="{{url_for('static', filename='/css/Perfil.css')}}">
+{% endblock %}
+    
+{% block body %}
+    <section>
+        <div class="ficha-perfil">
+            <div class="pfp">
+                <img src="/static/icons/sidebar/id-card.png" alt="">
+            </div>
+            <div></div>
+
+            <p>Nombre de Usuario: <br>
+                <b>{{ user.username }}</b></p>
+            <p>Correo: <br>
+                <b>{{ user.email }}</b></p>
+            <p>Contraseña: <br>
+                <b>********</b></p>
+
+            <form class="btn-perfil" action="{{url_for('perfil_cambio')}}">
+                <input type="submit" value="Editar" />
+            </form>
+        </div>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,35 @@
+.book {
+    width: 300px;
+    height: 450px;
+    border-left: 0.2rem solid brown;
+    border-top: 0.2rem solid brown;
+    box-shadow: 4px 4px 0px black;  
+}
+
+.book img {
+    width: 100%;
+    height: 100%;
+}
+
+section .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 75% 25%;
+}
+
+.logo-talking {
+    text-align: right;
+    height: 20vh;
+}
+
+.logo-talking img {
+    margin-top: -1rem;
+    padding-right: 3rem;
+    height: 125%;
+}

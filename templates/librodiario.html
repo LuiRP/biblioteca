@@ -1,0 +1,21 @@
+{% extends 'aside.html' %}
+
+{% block head %}
+<title>Libro del Día</title>
+<link rel="stylesheet" href="{{url_for('static', filename='/css/librodiario.css')}}">
+{% endblock %}
+    
+{% block body %}
+    <section>
+        <div class="content">
+            <div class="book">
+                <a href="{{ url_for('static', filename=book.pdf) }}" download><img src="{{ url_for('static', filename=book.cover   ) }}" alt="{{ book.name }}"></a>
+            </div>
+
+        </div>
+        <div class="logo-talking">
+            <img src="/static/icons/mascota-libro-diario.png" alt="">
+        </div>
+    </section>
+    
+{% endblock %}

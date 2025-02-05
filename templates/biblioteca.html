@@ -1,0 +1,23 @@
+{% extends 'aside.html' %}
+
+{% block head %}
+<title>Biblioteca</title>
+<link rel="stylesheet" href="{{url_for('static', filename='/css/biblioteca.css')}}">
+{% endblock %}
+
+{% block body %}
+<section>
+    <div class="books-grid">
+        {% for book in books %}
+    
+            <div class="book">
+                <a href="{{ url_for('static', filename=book.pdf) }}" download><img src="{{ url_for('static', filename=book.cover   ) }}" alt="{{ book.name }}"></a>
+            </div>
+            
+        {% endfor %}
+    </div>
+    <div class="logo-talking">
+        <img src="/static/icons/mascota-biblioteca.png" alt="">
+    </div>
+</section>
+{% endblock %}

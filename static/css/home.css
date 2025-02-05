@@ -1,0 +1,102 @@
+:root {
+    --blue-munsell: #1985a1ff;
+    --persian-green: #17a398ff;
+    --persian-red: #cc2936ff;
+    --cream: #ffffff;
+    --rich-black: #0e0f19ff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    height: 100vh;
+    grid-template-areas:'header header'
+                        'main aside';
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 90%;
+    background-color: var(--cream);
+}
+
+header {
+    background-color: var(--persian-red);
+    grid-area: header;
+}
+
+header h1 {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    color: var(--cream);
+
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+    text-align: center;
+}
+
+aside img {
+    padding-top: 10vh;
+    width: 75%;
+}
+
+input {
+    all: unset;
+  }
+
+main {
+    padding-top: 40vh;
+}
+  
+main .btns {
+    
+    text-align: center;
+}
+
+.btn-a {
+    margin-top: 3rem;
+    border-radius: 3rem;
+    background-color: var(--persian-red);
+    display: inline-block;
+    color: var(--cream);
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.btn-a input {
+    width: 10rem;
+    padding: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+
+.btn-a:hover, .btn-a:focus {
+    opacity: 75%;
+}
+
+.btn-b {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.btn-b:hover, .btn-b:focus {
+    opacity: 100%;
+}
+
+h2 {
+    color: var(--rich-black);
+}

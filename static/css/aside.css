@@ -1,0 +1,117 @@
+:root {
+    --blue-munsell: #1985a1ff;
+    --persian-green: #17a398ff;
+    --persian-red: #cc2936ff;
+    --nice-white: #ffffff;
+    --rich-black: #0e0f19ff;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+input, form {
+    all: unset;
+  }
+
+body {
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-areas: "aside main";
+    grid-template-columns: 18% 82%;
+}
+
+aside {
+    background-color: var(--nice-white);
+    grid-area: aside;
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: 14% 9% 9% 9% 9% 9% 11% auto;
+    box-shadow: 2px 1px 6px black;  
+}
+
+aside h1 {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    color: var(--persian-red);
+    font-size: 2rem;
+}
+
+.sidebar-element {
+    margin-left: 1rem;
+    margin-right: 1rem; 
+    border: 0.15rem solid var(--persian-green);
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    border: 0.15rem solid #ffffff;
+    font-weight: bold;
+}
+
+.sidebar-element img, .streak img  {
+    width: 4rem;
+    padding-right: 1rem;
+}
+
+#Aprender img {
+    padding-top: 0.8rem;
+}
+.streak {
+    background-color: var(--persian-red);
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    color: #ffffff;
+    font-size: large;
+}
+
+.streak h2 {
+    padding-left: 1rem;
+}
+
+.streak img {
+    margin-left: 1rem;
+}
+
+.sidebar-element-selected {
+    border-radius: 1rem;
+    margin-left: 1rem;
+    padding-bottom: 0.5rem;
+    border: 0.15rem solid #e9575f;
+    background-color: #F2C4B6;
+}
+
+.a-logout {
+    padding-top: 4rem;
+    text-align: center;
+    align-items: center;
+}
+
+.a-logout a:link {
+    text-decoration: none;
+    color: #121212;
+    opacity: 50%;
+}
+
+.a-logout a:visited {
+    text-decoration: none;
+    color: #121212;
+    opacity: 50%;
+}
+
+.a-logout a:hover {
+    text-decoration: none;
+    color: #121212;
+    opacity: 100%;
+}
+
+.a-logout a:active {
+    text-decoration: none;
+    color: #121212;
+    opacity: 50%;
+}
