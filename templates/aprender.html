@@ -1,8 +1,20 @@
 {% extends 'aside.html' %}
 
 {% block head %}
-<title>Aprender</title>
+<title>Caminos</title>
+<link rel="stylesheet" href="{{url_for('static', filename='/css/aprender.css')}}">
 {% endblock %}
 
 {% block body %}
+    <div class="cards">
+        <div class="card"><a href="{{url_for('course_1')}}"><img src="/static/cards/1.png" alt=""></a></div>
+        <div class="card"><a href="{{url_for('course_2')}}"><img src="/static/cards/2.png" alt=""></a></div>
+        <div class="card"><a href="{{url_for('course_3')}}"><img src="/static/cards/3.png" alt=""></a></div>
+        <div class="card"><a href="{{url_for('course_4')}}"><img src="/static/cards/4.png" alt=""></a></div>
+        <div class="card"><a href="{{url_for('course_5')}}"><img src="/static/cards/5.png" alt=""></a></div>
+        <div class="card"><a href="{{url_for('course_6')}}"><img src="/static/cards/6.png" alt=""></a></div>
+    </div>
+    <div class="logo-talking">
+        <img src="/static/icons/mascota-biblioteca.png" alt="">
+    </div>
 {% endblock %}

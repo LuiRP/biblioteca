@@ -146,6 +146,36 @@ def perfil():
 def perfil_cambio():
     return render_template('perfil_cambio.html', user=current_user)
 
+@app.route('/course_1', methods=['GET','POST'])
+@login_required
+def course_1():
+    return render_template('course_1.html')
+
+@app.route('/course_2', methods=['GET','POST'])
+@login_required
+def course_2():
+    return render_template('course_2.html')
+
+@app.route('/course_3', methods=['GET','POST'])
+@login_required
+def course_3():
+    return render_template('course_3.html')
+
+@app.route('/course_4', methods=['GET','POST'])
+@login_required
+def course_4():
+    return render_template('course_4.html')
+
+@app.route('/course_5', methods=['GET','POST'])
+@login_required
+def course_5():
+    return render_template('course_5.html')
+
+@app.route('/course_6', methods=['GET','POST'])
+@login_required
+def course_6():
+    return render_template('course_6.html')
+
 @app.route('/add_book', methods=['GET', 'POST'])
 def add_book():
     if request.method == 'POST':

@@ -1,0 +1,40 @@
+.timeline-area {
+    margin: 90px auto;
+    width: 360px;
+    border-left: 2px solid #ccc;
+    padding: 0 20px 0 30px;
+}
+
+.timeline-area div {
+    width: 125px;
+    height: 175px;
+    position: relative;
+    margin-bottom: 35px;
+    border-left: 2rem;
+    
+}
+
+.timeline-area div:before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    border: 3px solid #ddd;
+    margin-bottom: -5rem;
+    margin-left: -2.5rem;
+}
+
+.timeline-area img {
+    border-left: 0.2rem solid brown;
+    border-top: 0.2rem solid brown;
+    box-shadow: 4px 4px 0px black;  
+    width: 100%;
+    height: 100%;
+}
+
+.timeline-area img:hover {
+    cursor:pointer;
+    opacity: 70%;
+}

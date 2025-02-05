@@ -33,3 +33,7 @@ section {
     padding-right: 3rem;
     height: 125%;
 }
+
+.content img:hover {
+    opacity: 70%;
+}

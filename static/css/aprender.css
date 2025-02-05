@@ -1,25 +1,23 @@
-.books-grid {
-    margin: 3rem;
+.cards {
+    margin: 2rem;
+    margin-top: 1rem;
     display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
     place-items: center;
 }
 
-.book {
-    width: 100px;
-    height: 150px;
-    border-left: 0.2rem solid brown;
-    border-top: 0.2rem solid brown;
-    box-shadow: 4px 4px 0px black;  
+.card {
+    width: 360px;
+    height: 180px;
 }
 
-.book img {
+.card img {
     width: 100%;
     height: 100%;
 }
 
-.book:hover {
+.card:hover {
     opacity: 70%;
 }
 
@@ -35,7 +33,7 @@ section {
 }
 
 .logo-talking img {
-    margin-top: -1rem;
+    margin-top: -2.1rem;
     padding-right: 3rem;
     height: 125%;
 }
